@@ -150,10 +150,16 @@ nav.scrolled {
     border-radius: 0 0 8px 8px;
 }
 
-@media(max-width: 595px) {
-    nav {
-        display: none;
+@media screen and (max-width: 768px) {
+    .overlay-text {
+        font-size: 14px;
+        width: 80%;
     }
+
+    .download-button {
+        padding: 8px 16px;
+    }
+}
 
     nav.mobile-nav{
         display: flex;
