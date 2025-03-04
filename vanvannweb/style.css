@@ -1,247 +1,27 @@
 :root {
-    --red-color:#9D4040;
-    --dark-color:#070917;
+    --red-color: #9D4040;
+    --dark-color: #070917;
 }
 
 *,
-*::after
+*::after,
 *::before {
     box-sizing: border-box;
-}
-
-header {
-    background: url('img/VANS.svg') no-repeat;
-    background-position: center;
-    height: 336px;
-    width: 100%;
-}
-
-body {
     margin: 0;
-    font-family: "Inter", sans-serif;
+    padding: 0;
 }
 
-.wrapper {
-    max-width: 595px;
-    margin: 0 auto;
-}
-
-.btn-light {
-    background: var(--red-color);
-    padding: 10px 10px;
-    border-radius: 10px;
-    color: #fff;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: left;
-}
-
-nav {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 595px;
-    transition: all 500ms ease;
-}
-
-nav .logo {
-    width: 36px;
-    height: 77px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    width: 100px;
-    margin-right: 320px;
-}
-
-nav ul li {
-    margin-right: 65px;
-}
-
-nav ul li h3 {
-    text-decoration: none;
-    color: #fff;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    text-align: left;
-}
-
-.left h2 {
-    color: #ffffff;
-    margin: 155px;
-    margin-left: 85px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.3); /* สีฟ้าจางๆ */
-    padding: 10px 20px; /* เพิ่มช่องว่างรอบข้อความ */
-    border-radius: 10px; /* ทำให้ขอบมน */
-    display: inline-block; /* ให้พื้นหลังพอดีกับข้อความ */
-}
-
-
-.left a {
-    margin-left: 100px;
-    text-align: center;
-}
-
-.courses-section {
-    text-align: center;
-}
-.courses-section h2 {
-    text-align: center;
-}
-
-.courses-section.course-cards {
-    display: flex;
-    justify-content: center;
-}
-
-.courses-section.course-card {
-    margin-top: 60px;
-}
-
-.courses-section.course-card img {
-    width: 100%;
-}
-
-.app-section {
-    text-align: center;
-}
-
-footer {
-    background: var(--red-color);
-    color: #fff;
-    margin-top: 30px;
-    padding: 10px 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: #fff;
-}
-
-footer ul {
-    list-style: none;
-    padding-left: 1px;
-}
-
-footer ul li {
-    margin: 16px 0;
-}
-
-footer .link-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-}
-
-nav.scrolled {
-    background : var(--red-color) ;
-    box-shadow: 0 16px 14px --8px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 8px 8px;
-}
-
-@media(max-width: 768px) {
-    nav {
-        display: none;
-    }
-    .overlay-text {
-        font-size: 14px; /* ลดขนาดข้อความ */
-        width: 80%; /* ลดความกว้าง */
-    }
-
-    .download-button {
-        padding: 8px 16px; /* ปรับขนาดปุ่มให้เล็กลง */
-    }
-}
-
-    nav.mobile-nav{
-        display: flex;
-    }
-
-    nav.mobile-nav.scrolled {
-        padding: 8px 100px;
-        background: #070917;
-        box-shadow: 0 9px 21px -5px rgba(0, 0, 0, 0.3);
-    }
-}
-.download-container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.qr-code {
-    width: 200px;
-    height: 200px;
-    margin: 20px 0;
-}
-
-.btn-lightd {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.btn-light:hoverd {
-    background-color: #45a049;
-}
-.image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.image-text-pair {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.image-text-pair img {
-    width: 150px; /* ปรับขนาดรูปภาพ */
-    height: auto;
-}
-
-.image-text-pair p {
-    font-size: 18px;
-    color: #333;
-}
-.image-text-pair img {
-    width: 150px; /* ปรับขนาดรูปภาพ */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.image-text-pair p {
-    font-size: 18px;
-    color: #333;
-}
-.core-title {
-    text-align: center;
-}
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* ปรับขนาด container ให้เหมาะสมกับหน้าจอ */
 .wrapper {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px; /* กำหนดขนาดสูงสุดสำหรับโน้ตบุ๊ก */
     margin: 0 auto;
 }
 
@@ -253,34 +33,180 @@ h1 {
     padding: 50px 0;
 }
 
-.team-container {
+/* ปุ่มให้ขนาดยืดหยุ่น */
+.btn-light {
+    background: var(--red-color);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+}
+/* Header */
+header {
+    background: url('img/VANS.svg') no-repeat center;
+    background-size: cover;
+    height: 300px; /* ลดขนาดเพื่อให้พอดีกับมือถือ */
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    transition: all 500ms ease;
+    padding: 0 20px;
+    background: var(--dark-color);
+}
+
+/* ซ่อนเมนูหลักเมื่อเป็นมือถือ */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav.mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--dark-color);
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav.mobile-nav a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+}
+/* Section ปรับขนาดให้รองรับทุกหน้าจอ */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ข้อความ */
+.left h2 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* ปุ่ม */
+.left a {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ปรับ Course Section */
+.courses-section {
+    text-align: center;
+}
+
+.courses-section .course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses-section .course-card {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.courses-section .course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Footer */
+footer {
+    background: var(--red-color);
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+/* ลบ grid ออกเพื่อให้ responsive */
+footer .link-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.team-member {
-    width: 200px;
-    text-align: center;
+/* QR Code */
+.qr-code {
+    width: 150px;
+    height: auto;
+    margin: 20px 0;
 }
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
 
-.team-member img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
+    .left h2 {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 
-.team-member h3 {
-    margin-top: 10px;
-    font-size: 18px;
-}
+    .btn-light {
+        font-size: 14px;
+        padding: 10px;
+    }
 
-.team-member p {
-    font-size: 14px;
-    color: gray;
-}
+    .courses-section .course-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.download-btn {
-    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    .courses-section .course-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    footer .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-code {
+        width: 120px;
+    }
 }
