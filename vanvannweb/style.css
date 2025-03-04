@@ -151,13 +151,16 @@ nav.scrolled {
 }
 
 @media(max-width: 768px) {
+    nav {
+        display: none;
+    }
     .overlay-text {
-        font-size: 14px;
-        width: 80%;
+        font-size: 14px; /* ลดขนาดข้อความ */
+        width: 80%; /* ลดความกว้าง */
     }
 
     .download-button {
-        padding: 8px 16px;
+        padding: 8px 16px; /* ปรับขนาดปุ่มให้เล็กลง */
     }
 }
 
